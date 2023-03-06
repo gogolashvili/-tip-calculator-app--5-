@@ -1,0 +1,7 @@
+.cont {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./photo/foni.jpg");
+  background-position: center;
+  background-size: cover;
+}
