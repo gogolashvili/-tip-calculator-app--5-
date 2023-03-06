@@ -4,4 +4,31 @@
   background-image: url("./photo/foni.jpg");
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  gap: 420px;
+  align-items: center;
+  align-content: center;
+}
+img {
+  width: 100px;
+  height: 60px;
+}
+.card {
+  width: 65%;
+  height: 480px;
+  background-color: rgb(37, 44, 44);
+  opacity: 0.7;
+  border-radius: 25px;
+  margin-top: -150px;
+}
+.leftdiv {
+  width: 50%;
+  height: 100%;
+}
+.rightdiv {
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 15px;
 }
