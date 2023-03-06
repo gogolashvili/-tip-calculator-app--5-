@@ -30,8 +30,12 @@ img {
 .leftdiv {
   width: 47%;
   height: 90%;
-  background-color: aliceblue;
+  background-color: rgb(221, 225, 230);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .rightdiv {
   width: 47%;
@@ -39,4 +43,39 @@ img {
   background-color: rgb(31, 150, 174);
   border-radius: 15px;
   opacity: 0.5;
+}
+label {
+  width: 160px;
+  height: 25px;
+  font-size: 16px;
+  margin-left: 55px;
+}
+.input1 {
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
+  text-align: right;
+  background-color: darkgray;
+  border-radius: 5px;
+  margin-left: 50px;
+  border: none;
+  outline: none;
+}
+.inppro {
+  width: 118px;
+  height: 48px;
+  border-radius: 5px;
+}
+button {
+  width: 118px;
+  height: 48px;
+  border-radius: 5px;
+}
+.procent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  align-content: center;
 }
