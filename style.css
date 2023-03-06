@@ -35,7 +35,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   align-content: center;
   opacity: 0.9;
 }
@@ -113,4 +113,18 @@ button {
   margin-left: 55px;
   display: flex;
   gap: 26px;
+}
+.bill {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.peoplenumber {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.rightdiv {
+  display: flex;
+  flex-direction: column;
 }
