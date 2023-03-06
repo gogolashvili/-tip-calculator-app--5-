@@ -17,18 +17,26 @@ img {
 .card {
   width: 65%;
   height: 480px;
-  background-color: rgb(37, 44, 44);
+  background-color: rgb(92, 96, 96);
   opacity: 0.7;
   border-radius: 25px;
   margin-top: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
 }
 .leftdiv {
-  width: 50%;
-  height: 100%;
+  width: 47%;
+  height: 90%;
+  background-color: aliceblue;
+  border-radius: 15px;
 }
 .rightdiv {
-  width: 50%;
-  height: 100%;
-  background-color: blue;
+  width: 47%;
+  height: 90%;
+  background-color: rgb(31, 150, 174);
   border-radius: 15px;
+  opacity: 0.5;
 }
