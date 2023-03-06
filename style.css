@@ -35,7 +35,9 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 40px;
   align-content: center;
+  opacity: 0.9;
 }
 .rightdiv {
   width: 47%;
@@ -49,6 +51,11 @@ label {
   height: 25px;
   font-size: 16px;
   margin-left: 55px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #5e7a7d;
 }
 .input1 {
   width: 80%;
@@ -60,22 +67,50 @@ label {
   margin-left: 50px;
   border: none;
   outline: none;
+  font-family: "Space Mono", monospace;
 }
 .inppro {
   width: 118px;
   height: 48px;
   border-radius: 5px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #547878;
+  border: none;
+  outline: none;
+  background-color: darkgray;
 }
 button {
   width: 118px;
   height: 48px;
   border-radius: 5px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00474b;
 }
 .procent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-  align-items: center;
   align-content: center;
+}
+.procenti1 {
+  margin-left: 55px;
+  display: flex;
+  gap: 26px;
+}
+.procenti2 {
+  margin-left: 55px;
+  display: flex;
+  gap: 26px;
 }
