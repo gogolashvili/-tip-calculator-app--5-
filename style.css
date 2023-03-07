@@ -138,8 +138,9 @@ button:hover {
 .rightdiv {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 90px;
   align-content: center;
 }
 .amount {
@@ -147,7 +148,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 90px;
+  gap: 87px;
 }
 .total {
   display: flex;
@@ -158,15 +159,15 @@ button:hover {
 }
 .reset {
   width: 80%;
-  height: 48px;
-  background-color: #1e2121;
+  height: 50px;
+  background-color: #b5f3f5;
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  color: #ffffff;
+  color: #121111;
   mix-blend-mode: normal;
   border-radius: 5px;
   align-items: center;
@@ -176,7 +177,7 @@ button:hover {
 }
 .reset:hover {
   cursor: pointer;
-  background-color: #383f3f;
+  background-color: #12f6f6;
 }
 h3 {
   font-family: "Space Mono";
