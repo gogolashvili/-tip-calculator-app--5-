@@ -69,9 +69,7 @@ label {
   outline: none;
   font-family: "Space Mono", monospace;
 }
-.input1:hover {
-  border: 2px solid #00474b;
-}
+
 .inppro {
   width: 118px;
   height: 48px;
@@ -87,9 +85,7 @@ label {
   outline: none;
   background-color: darkgray;
 }
-.inppro:hover {
-  border: 2px solid #00474b;
-}
+
 button {
   width: 118px;
   height: 48px;
@@ -155,7 +151,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 90px;
+  gap: 130px;
 }
 .reset {
   width: 80%;
