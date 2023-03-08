@@ -41,17 +41,6 @@ person.addEventListener("input", function () {
   calculateTip();
 });
 
-reset.addEventListener("click", function () {
-  billInput = 0;
-  customInput = 0;
-  personInput = 0;
-  bill.value = "";
-  custom.value = "";
-  person.value = "";
-  amount.innerHTML = "$0.00";
-  total.innerHTML = "$0.00";
-});
-
 let some;
 percent.forEach((x) => {
   x.addEventListener("click", function () {
@@ -68,5 +57,19 @@ percent.forEach((x) => {
         y.className = "button";
       }
     });
+  });
+});
+
+reset.addEventListener("click", function () {
+  billInput = 0;
+  customInput = 0;
+  personInput = 0;
+  bill.value = "";
+  custom.value = "";
+  person.value = "";
+  amount.innerHTML = "$0.00";
+  total.innerHTML = "$0.00";
+  percent.forEach((x) => {
+    x.className = "button";
   });
 });
