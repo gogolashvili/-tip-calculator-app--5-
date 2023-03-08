@@ -5,11 +5,19 @@ let amount = document.querySelector("h3");
 let total = document.querySelector("h4");
 let reset = document.querySelector(".reset");
 let percent = document.querySelectorAll("button");
-console.log(percent);
+let warning = document.querySelector("p");
 
 let billInput = 0;
 let customInput = 0;
 let personInput = 0;
+
+percent.forEach((x) => {
+  x.addEventListener("click", function () {
+    if (person.value == 0) {
+      warning.style.display = "block";
+    }
+  });
+});
 
 function calculateTip() {
   if (billInput && personInput) {
@@ -72,4 +80,5 @@ reset.addEventListener("click", function () {
   percent.forEach((x) => {
     x.className = "button";
   });
+  warning.style.display = "none";
 });

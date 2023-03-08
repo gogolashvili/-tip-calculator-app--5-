@@ -57,6 +57,19 @@ label {
   line-height: 24px;
   color: #5e7a7d;
 }
+.bill1 {
+  display: flex;
+  gap: 120px;
+}
+.peoplenum {
+  display: flex;
+  gap: 120px;
+}
+p {
+  color: red;
+  font-size: 20px;
+  display: none;
+}
 .input1 {
   width: 70%;
   height: 50px;
