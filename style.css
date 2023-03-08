@@ -59,10 +59,11 @@ label {
 }
 .peoplenum {
   display: flex;
-  gap: 120px;
+  gap: 70px;
 }
 p {
   color: red;
+  font-family: "Space Mono", monospace;
   font-size: 20px;
   display: none;
 }
@@ -79,7 +80,7 @@ p {
   font-family: "Space Mono", monospace;
 }
 .input2 {
-  width: 70%;
+  width: 90%;
   height: 50px;
   font-size: 25px;
   text-align: right;
@@ -278,7 +279,7 @@ h2 {
 }
 .mendiv {
   background-color: rgb(255, 255, 255);
-  width: 40px;
+  width: 10%;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -288,10 +289,14 @@ h2 {
   border-bottom-left-radius: 5px;
 }
 .div2 {
+  width: 79%;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  border: 2px solid rgb(238, 8, 8, 0);
+  margin-left: 52px;
+  border-radius: 5px;
 }
 .men {
   width: 20px;
@@ -346,6 +351,20 @@ h2 {
     width: 80px;
     height: 40px;
   }
+  .style {
+    background-color: #128288;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+  }
   .inppro {
     width: 80px;
     height: 40px;
@@ -376,13 +395,19 @@ h2 {
     align-items: center;
     align-content: center;
   }
-  .input1 {
+  /* .input1 {
     width: 150px;
     height: 50px;
-  }
-  .input2 {
-    width: 150px;
-    height: 50px;
+  } */
+
+  .div2 {
+    width: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin-left: 35px;
   }
   h3 {
     font-size: 32px;
@@ -397,9 +422,13 @@ h2 {
   .peoplenum {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
   p {
     font-size: 15px;
+  }
+  label {
+    font-size: 15px;
+    margin-left: 20px;
   }
 }
