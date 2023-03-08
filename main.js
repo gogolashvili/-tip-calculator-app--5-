@@ -11,13 +11,15 @@ let billInput = 0;
 let customInput = 0;
 let personInput = 0;
 
-percent.forEach((x) => {
-  x.addEventListener("click", function () {
-    if (person.value == 0) {
-      warning.style.display = "block";
-    }
-  });
-});
+// percent.forEach((x) => {
+//   x.addEventListener("click", function () {
+//     if (bill.value == 0 && person.value == 0) {
+//       warning.style.display = "block";
+//       amount.innerHTML = "$ 0.00";
+//       total.innerHTML = "$ 0.00";
+//     }
+//   });
+// });
 
 function calculateTip() {
   if (billInput && personInput) {
@@ -34,9 +36,12 @@ function calculateTip() {
   }
 }
 
+let percentClicked = false;
 bill.addEventListener("input", function () {
   billInput = bill.value;
-  calculateTip();
+  if (percentClicked || custom.value) {
+    calculateTip();
+  }
 });
 
 custom.addEventListener("input", function () {
@@ -46,7 +51,16 @@ custom.addEventListener("input", function () {
 
 person.addEventListener("input", function () {
   personInput = person.value;
-  calculateTip();
+  if (percentClicked || custom.value) {
+    calculateTip();
+  }
+  if (person.value == 0) {
+    warning.style.display = "block";
+    amount.innerHTML = "$0.00";
+    total.innerHTML = "$0.00";
+  } else {
+    warning.style.display = "none";
+  }
 });
 
 let some;
@@ -59,6 +73,14 @@ percent.forEach((x) => {
     customInput = 0;
     calculateTip();
     x.className = "style";
+    if (bill.value == 0 || person.value == 0) {
+      warning.style.display = "block";
+      amount.innerHTML = "$0.00";
+      total.innerHTML = "$0.00";
+    } else {
+      warning.style.display = "none";
+    }
+    percentClicked = true;
 
     percent.forEach((y) => {
       if (y.innerHTML !== some) {
