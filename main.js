@@ -97,4 +97,6 @@ reset.addEventListener("click", function () {
     x.className = "button";
   });
   warning.style.display = "none";
+  person.style.border = "2px solid rgb(238, 8, 8, 0)";
+  percentClicked = false;
 });
