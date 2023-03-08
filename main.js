@@ -12,6 +12,8 @@ let billInput = 0;
 let customInput = 0;
 let personInput = 0;
 
+let buttonValue = 0;
+
 function calculateTip() {
   if (billInput && personInput) {
     let tipPercent = 0;
@@ -24,7 +26,12 @@ function calculateTip() {
     let totalValue = billInput / personInput + amountValue;
     amount.innerHTML = "$" + amountValue.toFixed(2);
     total.innerHTML = "$" + totalValue.toFixed(2);
+    console.log(billInput, customInput, personInput);
   }
+  // tipPerPerson = (bill.innerHTML * buttonValue) / 100 / 2;
+  // totalPerPerson = tipPerPerson + bill.innerHTML / person.innerHTML;
+  // amount.innerHTML = tipPerPerson;
+  // total.innerHTML = totalPerPerson;
 }
 
 let percentClicked = false;
@@ -33,11 +40,17 @@ bill.addEventListener("input", function () {
   if (percentClicked || custom.value) {
     calculateTip();
   }
+  console.log(buttonValue);
 });
 
 custom.addEventListener("input", function () {
   customInput = custom.value;
-  calculateTip();
+  if (customInput > 0) {
+    calculateTip();
+  } else {
+    amount.innerHTML = "$0.00";
+    total.innerHTML = "$0.00";
+  }
 });
 
 person.addEventListener("input", function () {
@@ -56,16 +69,15 @@ person.addEventListener("input", function () {
   }
 });
 
-let some;
 percent.forEach((x) => {
   x.addEventListener("click", function () {
-    some = x.innerHTML;
-    amount.innerHTML = x.innerHTML;
-    total.innerHTML = x.innerHTML;
-    custom.value = "";
-    customInput = 0;
+    buttonValue = x.value;
+
+    custom.value = buttonValue;
+    customInput = buttonValue;
     calculateTip();
     x.className = "style";
+
     if (bill.value == 0 || person.value == 0) {
       warning.style.display = "block";
       warning2.style.border = "2px solid rgb(238, 8, 8, 1)";
@@ -78,7 +90,7 @@ percent.forEach((x) => {
     percentClicked = true;
 
     percent.forEach((y) => {
-      if (y.innerHTML !== some) {
+      if (y.innerHTML !== x.innerHTML) {
         y.className = "button";
       }
     });
