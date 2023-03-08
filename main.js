@@ -28,10 +28,6 @@ function calculateTip() {
     total.innerHTML = "$" + totalValue.toFixed(2);
     console.log(billInput, customInput, personInput);
   }
-  // tipPerPerson = (bill.innerHTML * buttonValue) / 100 / 2;
-  // totalPerPerson = tipPerPerson + bill.innerHTML / person.innerHTML;
-  // amount.innerHTML = tipPerPerson;
-  // total.innerHTML = totalPerPerson;
 }
 
 let percentClicked = false;
