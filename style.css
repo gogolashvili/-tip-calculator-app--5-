@@ -71,6 +71,18 @@ label {
   outline: none;
   font-family: "Space Mono", monospace;
 }
+.input2 {
+  width: 70%;
+  height: 50px;
+  font-size: 25px;
+  text-align: right;
+  background-color: rgb(255, 255, 255);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: "Space Mono", monospace;
+}
 
 .inppro {
   width: 118px;
@@ -86,6 +98,20 @@ label {
   border: none;
   outline: none;
   background-color: darkgray;
+}
+.style {
+  background-color: #c22626;
+  border-radius: 5px;
+  width: 118px;
+  height: 48px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
 }
 
 button {
@@ -187,6 +213,25 @@ h3 {
   letter-spacing: -1px;
   color: #04231f;
 }
+h4 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  text-align: right;
+  letter-spacing: -1px;
+  color: #04231f;
+}
+h5 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #00474b;
+}
 h1 {
   font-family: "Space Mono";
   font-style: normal;
@@ -245,6 +290,7 @@ h2 {
   width: 20px;
   height: 20px;
 }
+
 @media (max-width: 376px) {
   .cont {
     background-color: gray;
@@ -327,7 +373,16 @@ h2 {
     width: 150px;
     height: 50px;
   }
+  .input2 {
+    width: 150px;
+    height: 50px;
+  }
   h3 {
+    font-size: 32px;
+    line-height: 47px;
+    letter-spacing: -0.666667px;
+  }
+  h4 {
     font-size: 32px;
     line-height: 47px;
     letter-spacing: -0.666667px;
