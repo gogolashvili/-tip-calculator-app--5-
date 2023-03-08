@@ -4,7 +4,8 @@ let custom = document.querySelector(".inppro");
 let amount = document.querySelector("h3");
 let total = document.querySelector("h4");
 let reset = document.querySelector(".reset");
-let percent = document.querySelector("button");
+let percent = document.querySelectorAll("button");
+console.log(percent);
 
 let billInput = 0;
 let customInput = 0;
@@ -26,7 +27,7 @@ function calculateTip() {
 }
 
 bill.addEventListener("input", function () {
-  firstInput = bill.value;
+  billInput = bill.value;
   calculateTip();
 });
 
