@@ -11,16 +11,6 @@ let billInput = 0;
 let customInput = 0;
 let personInput = 0;
 
-// percent.forEach((x) => {
-//   x.addEventListener("click", function () {
-//     if (bill.value == 0 && person.value == 0) {
-//       warning.style.display = "block";
-//       amount.innerHTML = "$ 0.00";
-//       total.innerHTML = "$ 0.00";
-//     }
-//   });
-// });
-
 function calculateTip() {
   if (billInput && personInput) {
     let tipPercent = 0;
@@ -56,10 +46,12 @@ person.addEventListener("input", function () {
   }
   if (person.value == 0) {
     warning.style.display = "block";
+    person.style.border = "2px solid rgb(238, 8, 8, 1)";
     amount.innerHTML = "$0.00";
     total.innerHTML = "$0.00";
   } else {
     warning.style.display = "none";
+    person.style.border = "2px solid rgb(238, 8, 8, 0)";
   }
 });
 
@@ -75,10 +67,12 @@ percent.forEach((x) => {
     x.className = "style";
     if (bill.value == 0 || person.value == 0) {
       warning.style.display = "block";
+      person.style.border = "2px solid rgb(238, 8, 8, 1)";
       amount.innerHTML = "$0.00";
       total.innerHTML = "$0.00";
     } else {
       warning.style.display = "none";
+      person.style.border = "2px solid rgb(238, 8, 8, 0)";
     }
     percentClicked = true;
 
